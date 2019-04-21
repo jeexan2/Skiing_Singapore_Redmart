@@ -13,4 +13,13 @@ public class Graph_Node {
         xPos = x;
         yPos = y;
     }
+    public Integer getxPos(){
+        return xPos;
+    }
+    public Integer getyPos(){
+        return yPos;
+    }
+    public Integer getVal(){
+        return val;
+    }
 }
