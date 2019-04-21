@@ -5,8 +5,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class WeightedGraphMatrix {
-    int row,col;
+    Integer row,col;
+
     List<List<Integer>> weightedGraph;
+
 
     public WeightedGraphMatrix(int _row,int _col){
         row = _row;
@@ -36,4 +38,20 @@ public class WeightedGraphMatrix {
             }
         }
     }
+
+    public Integer getRow(){
+        return row;
+    }
+    public Integer getCol(){
+        return col;
+    }
+    public List<List<Integer>> getGraph(){
+        return weightedGraph;
+    }
+
+    public Integer graphValue(Integer row, Integer col){
+        return weightedGraph.get(row).get(col);
+    }
+
+
 }
