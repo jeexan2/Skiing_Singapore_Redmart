@@ -11,7 +11,7 @@ public class Finding_All_Path{
     List<Graph_Node> nodes = new ArrayList<>();
     //For Direction
     Integer dirX[] = {-1,1};
-    Integer dirY[] = {1};
+    Integer dirY[] = {-1,1};
     //For Direction
 
     public Finding_All_Path(){
