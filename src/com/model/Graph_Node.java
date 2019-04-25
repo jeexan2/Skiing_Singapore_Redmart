@@ -1,9 +1,13 @@
 package com.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Graph_Node {
     Integer xPos;
     Integer yPos;
     Integer val;
+    List<Graph_Node> neighbours;
 
     public Graph_Node(){
 
@@ -22,4 +26,12 @@ public class Graph_Node {
     public Integer getVal(){
         return val;
     }
+    public void setNeighbours(List<Graph_Node> _neighbours){
+        neighbours = _neighbours;
+    }
+    public Graph_Node getGraphNode(){
+        return this;
+    }
+
+
 }

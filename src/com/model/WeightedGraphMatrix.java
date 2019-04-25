@@ -35,7 +35,9 @@ public class WeightedGraphMatrix {
             List<Integer> rowMatrix = weightedGraph.get(i);
             for(int j = 0; j < col; j++){
                 System.out.print(rowMatrix.get(j));
+                System.out.print(" ");
             }
+            System.out.println();
         }
     }
 
@@ -52,6 +54,10 @@ public class WeightedGraphMatrix {
     public Integer graphValue(Integer row, Integer col){
         return weightedGraph.get(row).get(col);
     }
+
+
+
+
 
 
 }
